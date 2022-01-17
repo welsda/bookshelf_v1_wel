@@ -23,8 +23,8 @@
       <ng-container matColumnDef="_idGenero">
         <th mat-header-cell *matHeaderCellDef>Icones CDD</th>
         <td mat-cell *matCellDef="let generos">
-          <div class="example-button-container icone">
-            <button mat-fab color="accent" aria-label="">
+          <div class="example-button-container">
+            <button class="icone" mat-fab color="accent" aria-label="">
               <mat-icon>{{ generos._idGenero | pipes}}</mat-icon>
             </button>
           </div>
