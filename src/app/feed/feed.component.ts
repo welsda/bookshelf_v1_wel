@@ -17,7 +17,7 @@ export class FeedComponent {
   cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
     map(({ matches }) => {
       if (matches) {
-        return [];
+        return this.cards$;
       }
       return this.cards$;
     })
