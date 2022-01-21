@@ -21,7 +21,7 @@ import { NavegacaoService } from './../servicosInterface/navegacao.service';
 export class NavegacaoComponent {
   usuario$ = this.autenticacaoFirebaseService.usuarioLogado$;
   //Itens do menu principal
-  tituloNav = 'BookShelf v1';
+  logoMenu = '../../assets/imagens/logoBS4.png';
   //Itens de icones e imagrns de navegação
   iconeGeral = '../../assets/imagens/ShelfBook.png'
   lIcone = 80;
