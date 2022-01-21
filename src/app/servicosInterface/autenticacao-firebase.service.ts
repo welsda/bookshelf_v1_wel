@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Auth } from '@angular/fire/auth';
 import { signInWithEmailAndPassword } from 'firebase/auth';
+import { authState } from 'rxfire/auth';
 import { from } from 'rxjs';
 //@indica que faz acessos externos de um repositório
 
@@ -8,6 +9,9 @@ import { from } from 'rxjs';
   providedIn: 'root'
 })
 export class AutenticacaoFirebaseService {
+
+  usuarioLogado$ = authState(this.usuarioFb);
+  //para entregar estado de autenticação
 
   constructor(
     private usuarioFb: Auth
