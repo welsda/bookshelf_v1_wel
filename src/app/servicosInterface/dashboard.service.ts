@@ -17,7 +17,7 @@ export class DashboardService {
     //[] explica que é um vetor
     .pipe(
       first(),
-      tap(apiDashboard => console.log(apiDashboard))
+      tap(apiDashboard => console.log(apiDashboard))//mapeamento
     )
   }
 }
